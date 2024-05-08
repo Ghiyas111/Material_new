@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
+Route::get('/contact', [ContactController::class, 'index'])->name('layouts.contact');
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
 Route::get('/shop/{slug?}', [\App\Http\Controllers\ShopController::class, 'index'])->name('shop.index');
@@ -63,3 +64,4 @@ Route::group(['middleware' => 'auth'], function() {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

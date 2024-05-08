@@ -1,3 +1,10 @@
+@extends('layouts.app')
+
+@section('content')
+    @include('frontend.layouts.contact')
+@endsection
+
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -11,10 +18,14 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- neww ghiyas-->
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!-- apaa -->
+    <a href="{{ route('layouts.contact') }}">Contact Us</a>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
