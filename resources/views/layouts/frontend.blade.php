@@ -247,9 +247,9 @@
                 <a href="./index.html"><img src="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
               </div>
               <ul>
-                <li>Address: 60-49 Road 11378 New York</li>
-                <li>Phone: +65 11.188.888</li>
-                <li>Email: hello@colorlib.com</li>
+                <li>Address : SMKN 1 CIAMIS</li>
+                <li>Phone: 0909090909</li>
+                <li>Email: Material.com</li>
               </ul>
             </div>
           </div>
