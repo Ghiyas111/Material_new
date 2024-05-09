@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
-Route::get('/shop/{slug?}', [\App\Http\Controllers\ShopController::class, 'index'])->name('shop.index');
+Route::get('/shop', [\App\Http\Controllers\ShopController::class, 'index'])->name('shop.index');
 Route::get('/shop/tag/{slug?}', [\App\Http\Controllers\ShopController::class, 'tag'])->name('shop.tag');
-Route::get('/product/{product:slug}', [\App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
+Route::get('/product/{slug}', [\App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
 
 // react route
 Route::get('products/{slug?}', [\App\Http\Controllers\ShopController::class, 'getProducts']);
