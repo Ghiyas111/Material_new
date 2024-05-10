@@ -43,6 +43,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/order/checkout', [\App\Http\Controllers\OrderController::class, 'process'])->name('checkout.process');
     Route::resource('/cart', \App\Http\Controllers\CartController::class)->except(['store', 'show']);
 
+
     Route::group(['middleware' => ['isAdmin'],'prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::get('dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
        
