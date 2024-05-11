@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('frontend/img/breadcrumb.jpg') }}">
+    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('frontend/img/garis.png') }}">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -91,7 +91,7 @@
                 <div class="product__item">
                   <div
                     class="product__item__pic set-bg"
-                    data-setbg="img/product/product-1.jpg"
+                    data-setbg="img/product/paku y.jpg"
                   >
                     <ul class="product__item__pic__hover">
                       <li>
@@ -106,8 +106,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Paku</a></h6>
+                    <h5>Rp 30.00</h5>
                   </div>
                 </div>
               </div>
@@ -124,8 +124,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Baut</a></h6>
+                    <h5>Rp 50.000</h5>
                   </div>
                 </div>
               </div>
@@ -145,8 +145,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Bata</a></h6>
+                    <h5>Rp 70.00</h5>
                   </div>
                 </div>
               </div>
@@ -166,8 +166,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Batako</a></h6>
+                    <h5>Rp 90.00</h5>
                   </div>
                 </div>
               </div>
@@ -187,8 +187,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Pilok</a></h6>
+                    <h5>Rp 70.000</h5>
                   </div>
                 </div>
               </div>
@@ -208,8 +208,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Cat</a></h6>
+                    <h5> Rp 30.000</h5>
                   </div>
                 </div>
               </div>
@@ -229,8 +229,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Kayu</a></h6>
+                    <h5>Rp 40.00</h5>
                   </div>
                 </div>
               </div>
@@ -250,8 +250,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Betton</a></h6>
+                    <h5>Rp 300.000</h5>
                   </div>
                 </div>
               </div>
@@ -271,8 +271,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Kerikil</a></h6>
+                    <h5>Rp 700.000</h5>
                   </div>
                 </div>
               </div>
@@ -292,8 +292,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Baja</a></h6>
+                    <h5>Rp 900.000</h5>
                   </div>
                 </div>
               </div>
@@ -313,8 +313,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Keramik</a></h6>
+                    <h5>Rp 50.000</h5>
                   </div>
                 </div>
               </div>
@@ -334,8 +334,8 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Crab Pool Security</a></h6>
-                    <h5>$30.00</h5>
+                    <h6><a href="#">Kaca</a></h6>
+                    <h5>Rp 400.000</h5>
                   </div>
                 </div>
               </div>
