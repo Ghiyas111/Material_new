@@ -6,7 +6,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ogani | Template</title>
+    <title>Material</title>
 
     <!-- Google Font -->
     <link
@@ -35,7 +35,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
       <div class="humberger__menu__logo">
-        <a href="#"><img src="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
+        <a  href="#"><img style="margin-left: 150px;"="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
       </div>
       <div class="humberger__menu__cart">
         <ul>
@@ -89,7 +89,8 @@
               @endforeach
             </ul>
           </li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
+
         </ul>
       </nav>
       <div id="mobile-menu-wrap"></div>
@@ -101,7 +102,7 @@
       </div>
       <div class="humberger__menu__contact">
         <ul>
-          <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+          <li><i class="fa fa-envelope"></i> Material@gmail.com</li>
           <li>Free Shipping for all Order of $99</li>
         </ul>
       </div>
@@ -116,7 +117,7 @@
             <div class="col-lg-6 col-md-6">
               <div class="header__top__left">
                 <ul>
-                  <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                  <li><i class="fa fa-envelope"></i> Material@gmail.com</li>
                   <li>Free Shipping for all Order of $99</li>
                 </ul>
               </div>
@@ -180,7 +181,8 @@
                     @endforeach
                   </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
+
               </ul>
             </nav>
           </div>

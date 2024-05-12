@@ -24,6 +24,7 @@
     <section class="product-details spad">
       <div class="container">
         <div class="row">
+<<<<<<< HEAD
           <div class="col-lg-6 col-md-6">
             <div class="product__details__pic">
               <div class="product__details__pic__item">
@@ -180,6 +181,15 @@
                     </p>
                   </div>
                 </div>
+=======
+          <div class="col-lg-12 text-center">
+            <div class="breadcrumb__text">
+              <h2>Material Package</h2>
+              <div class="breadcrumb__option">
+                <a href="./index.html">Home</a>
+                <a href="./index.html">Baja Kuat</a>
+                <span>Material Package</span>
+>>>>>>> 3aa2111b1b7ce3de89aac7f6d97af4d25d43846d
               </div>
             </div>
           </div>
