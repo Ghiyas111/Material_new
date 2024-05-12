@@ -18,9 +18,9 @@ use App\Http\Controllers\Frontend\ContactController;
 Route::get('/contact', [ContactController::class, 'index'])->name('layouts.contact');
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
-Route::get('/shop/{slug?}', [\App\Http\Controllers\ShopController::class, 'index'])->name('shop.index');
+Route::get('/shop', [\App\Http\Controllers\ShopController::class, 'index'])->name('shop.index');
 Route::get('/shop/tag/{slug?}', [\App\Http\Controllers\ShopController::class, 'tag'])->name('shop.tag');
-Route::get('/product/{product:slug}', [\App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
+Route::get('/product/{slug}', [\App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
 
 // react route
 Route::get('products/{slug?}', [\App\Http\Controllers\ShopController::class, 'getProducts']);
@@ -43,6 +43,7 @@ Route::group(['middleware' => 'auth'], function() {
     
     Route::get('/order/checkout', [\App\Http\Controllers\OrderController::class, 'process'])->name('checkout.process');
     Route::resource('/cart', \App\Http\Controllers\CartController::class)->except(['store', 'show']);
+
 
     Route::group(['middleware' => ['isAdmin'],'prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::get('dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
