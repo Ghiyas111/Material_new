@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,6 +52,7 @@ Route::group(['middleware' => 'auth'], function() {
         // categories
         Route::resource('categories', \App\Http\Controllers\Admin\CategoryController::class);
         Route::post('categories/images', [\App\Http\Controllers\Admin\CategoryController::class,'storeImage'])->name('categories.storeImage');
+        Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
     
         // tags
         Route::resource('tags', \App\Http\Controllers\Admin\TagController::class);
@@ -58,6 +60,8 @@ Route::group(['middleware' => 'auth'], function() {
         // products
         Route::resource('products', \App\Http\Controllers\Admin\ProductController::class);
         Route::post('products/images', [\App\Http\Controllers\Admin\ProductController::class,'storeImage'])->name('products.storeImage');
+        Route::get('/admin', [App\Http\Controller\Admin\DashboardController::class, 'index'])->name('dashboard');   
+        
     });
 });
 
@@ -65,4 +69,3 @@ Route::group(['middleware' => 'auth'], function() {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/admin', [App\Http\Controller\Admin\DashboardController::class, 'index'])->name('dashboard');

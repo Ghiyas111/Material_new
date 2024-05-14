@@ -35,7 +35,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
       <div class="humberger__menu__logo">
-        <a  href="#"><img style="margin-left: 150px;"="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
+        <a  href="#"><img style="margin-left: 200px;"="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
       </div>
       <div class="humberger__menu__cart">
         <ul>
@@ -168,25 +168,26 @@
               <a href="/"><img src="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <nav class="header__menu">
               <ul>
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="{{ route('shop.index') }}">Shop</a></li>
                 <li>
-                  <a href="#">Categories</a>
+                  <a href="{{'categories'}}">Categories</a>
                   <ul class="header__menu__dropdown">
                     @foreach($menu_categories as $menu_category)
-                      <li><a href="{{ route('shop.index', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
+                      <li><a href="{{ route('layouts.categories', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
                     @endforeach
                   </ul>
                 </li>
                 <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
+                <li><a href="{{ ('about') }}">About Us</li>
 
               </ul>
             </nav>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-2">
             <div class="header__cart">
               <ul>
                 <li>

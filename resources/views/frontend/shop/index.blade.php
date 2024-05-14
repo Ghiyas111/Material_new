@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('frontend/img/eta.jpg') }}">
+    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('frontend/img/product/bg.jpg') }}">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">

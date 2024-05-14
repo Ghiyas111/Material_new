@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- apaa -->
     <a href="{{ route('layouts.contact') }}">Contact Us</a>
+    <a href="{{ route('categories') }}">Categories</a>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -50,7 +51,7 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('auth.login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
