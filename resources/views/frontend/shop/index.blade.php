@@ -286,7 +286,7 @@
                   </div>
                   <div class="product__item__text">
                     <h6><a href="#">Logam</a></h6>
-                    <h5>Rp 900.000/Pcs/h5>
+                    <h5>Rp 900.000/Pcs</h5>
                   </div>
                 </div>
               </div>
