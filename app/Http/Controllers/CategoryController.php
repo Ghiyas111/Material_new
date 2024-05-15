@@ -1,15 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Controller;
+// app/Http/Controllers/CategoryController.php
+
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-
 
 class CategoryController extends Controller
 {
     public function index()
     {
-        return view('layouts.categories');
+        // Di sini Anda bisa mengambil data kategori dari database
+        // $categories = Category::all();
+        
+        return view('categories.index');
     }
 }

@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- apaa -->
     <a href="{{ route('layouts.contact') }}">Contact Us</a>
-    <a href="{{ route('categories') }}">Categories</a>
+    
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

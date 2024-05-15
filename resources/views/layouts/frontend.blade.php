@@ -52,7 +52,7 @@
           @guest
             <div class="header__top__right__language">
               <div class="header__top__right__auth">
-                <a href="{{ route('login') }}"><i class="fa fa-user"></i> Login</a>
+              <a href="{{ route('login') }}"><i class="fa fa-user"></i>Login</a>
               </div>
             </div>
             <div class="header__top__right__auth" style="margin-left: 20px">
@@ -82,7 +82,8 @@
           <li class="active"><a href="/">Home</a></li>
           <li><a href="{{ route('shop.index') }}">Shop</a></li>
           <li>
-            <a href="#">Categories</a>
+          <a href="{{ route('categories.index') }}">Categories</a>
+
             <ul class="header__menu__dropdown">
               @foreach($menu_categories as $menu_category)
                 <li><a href="{{ route('shop.index', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
@@ -182,7 +183,7 @@
                   </ul>
                 </li>
                 <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
-                <li><a href="{{ ('about') }}">About Us</li>
+                <li><a href="{{ route('about-us') }}">About Us</a></li>
 
               </ul>
             </nav>
