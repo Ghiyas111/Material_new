@@ -119,7 +119,7 @@
               <div class="header__top__left">
                 <ul>
                   <li><i class="fa fa-envelope"></i> Material@gmail.com</li>
-                  <li>Materialmu Materialku (Aet2k24)</li>
+                  
                 </ul>
               </div>
             </div>

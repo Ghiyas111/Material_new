@@ -1,135 +1,118 @@
+<!-- resources/views/about.blade.php -->
+
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - [Nama Toko Material Anda]</title>
+    <title>About Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+        }
+        .header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: right;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        #about {
-            margin: 30px 0;
-        }
-        #about h1, #about h2, #about h3 {
-            color: #333;
-        }
-        .highlight {
-            color: #77aaff;
-        }
-        .content-section {
-            background: #fff;
+        .content {
+            background-color: white;
             padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
-        footer {
-            background: #333;
-            color: #fff;
+        .content h2 {
+            margin-top: 0;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-member {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .team-member h3 {
+            margin: 10px 0 5px;
+        }
+        .team-member p {
+            margin: 0;
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .team-member {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .team-member {
+                flex: 1 1 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="#">[Nama Toko Material Anda]</a></h1>
-            <ul>
-                <li><a href="#contact">Hubungi Kami</a></li>
-                <li><a href="#team">Tim Kami</a></li>
-                <li><a href="#products">Produk Kami</a></li>
-                <li><a href="#mission">Misi Kami</a></li>
-                <li><a href="#vision">Visi Kami</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <div class="container" id="about">
-        <section class="content-section">
-            <h1>Selamat Datang di <span class="highlight">[Nama Toko Material Anda]</span></h1>
-            <p>Destinasi utama Anda untuk segala kebutuhan material bangunan berkualitas tinggi. Kami hadir dengan komitmen untuk memberikan solusi terbaik bagi proyek konstruksi Anda, mulai dari renovasi kecil hingga pembangunan besar.</p>
-        </section>
-
-        <section class="content-section" id="vision">
-            <h2>Visi Kami</h2>
-            <p>Visi kami adalah menjadi mitra terpercaya bagi setiap pembangunan di Indonesia, memberikan bahan bangunan yang tidak hanya berkualitas tinggi, namun juga ramah lingkungan dan berkelanjutan.</p>
-        </section>
-
-        <section class="content-section" id="mission">
-            <h2>Misi Kami</h2>
-            <ul>
-                <li><strong>Kualitas Terbaik:</strong> Menyediakan produk material bangunan berkualitas tinggi yang memenuhi standar internasional.</li>
-                <li><strong>Pelayanan Prima:</strong> Memberikan layanan pelanggan yang profesional, responsif, dan bersahabat.</li>
-                <li><strong>Keberlanjutan:</strong> Berkontribusi pada pembangunan berkelanjutan dengan mempromosikan produk-produk ramah lingkungan.</li>
-                <li><strong>Inovasi:</strong> Terus berinovasi untuk memenuhi kebutuhan pelanggan dengan produk-produk terbaru di pasar.</li>
-            </ul>
-        </section>
-
-        <section class="content-section" id="products">
-            <h2>Produk Kami</h2>
-            <p>Kami menawarkan berbagai macam produk material bangunan, termasuk:</p>
-            <ul>
-                <li><strong>Semen dan Beton:</strong> Pilihan semen dan beton terbaik untuk fondasi yang kokoh.</li>
-                <li><strong>Besi dan Baja:</strong> Berbagai jenis besi dan baja untuk kebutuhan struktur bangunan.</li>
-                <li><strong>Kayu dan Papan:</strong> Material kayu dan papan berkualitas untuk berbagai keperluan konstruksi.</li>
-                <li><strong>Cat dan Pelapis:</strong> Produk cat dan pelapis dengan warna tahan lama dan perlindungan ekstra.</li>
-                <li><strong>Bahan Insulasi:</strong> Solusi insulasi untuk kenyamanan termal dan akustik di setiap ruangan.</li>
-                <li><strong>Keramik dan Marmer:</strong> Koleksi keramik dan marmer elegan untuk memperindah setiap sudut rumah Anda.</li>
-            </ul>
-        </section>
-
-        <section class="content-section" id="team">
-            <h2>Tim Kami</h2>
-            <p>Tim kami terdiri dari para profesional yang berdedikasi dan berpengalaman dalam industri bahan bangunan. Kami siap membantu Anda dari tahap perencanaan hingga penyelesaian proyek dengan saran dan dukungan teknis yang komprehensif.</p>
-        </section>
-
-        <section class="content-section" id="contact">
-            <h2>Hubungi Kami</h2>
-            <p>Kami selalu siap mendengar dan membantu kebutuhan Anda. Jangan ragu untuk menghubungi kami melalui:</p>
-            <ul>
-                <li><strong>Telepon:</strong> [Nomor Telepon Anda]</li>
-                <li><strong>Email:</strong> <a href="mailto:[Alamat Email Anda]">[Alamat Email Anda]</a></li>
-                <li><strong>Alamat:</strong> [Alamat Toko Anda]</li>
-            </ul>
-        </section>
+    <div class="header">
+        <h1>About Us</h1>
     </div>
-
-    <footer>
-        <p>&copy; 2024 [Nama Toko Material Anda]. Semua Hak Dilindungi.</p>
-    </footer>
+    <div class="container">
+        <div class="content">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide the best services to our customers with a focus on quality and innovation. We strive to exceed expectations and deliver exceptional value.</p>
+        </div>
+        <div class="content">
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="{{ asset('frontend/img/product/pakuy.jpg') }}" alt="Member 1">
+                    <h3>John Doe</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ asset('images/member2.jpg') }}" alt="Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ asset('images/member3.jpg') }}" alt="Member 3">
+                    <h3>Mike Johnson</h3>
+                    <p>COO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </div>
 </body>
 </html>
