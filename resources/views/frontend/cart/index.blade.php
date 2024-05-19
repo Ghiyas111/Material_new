@@ -39,7 +39,7 @@
                             <tr>
                                 <td class="shoping__cart__item">
                                     <img src="{{ asset('frontend/img/cart/cart-1.jpg') }}" alt="">
-                                    <h5>Vegetable’s Package</h5>
+                                    <h5>Material Package</h5>
                                 </td>
                                 <td class="shoping__cart__price">
                                     $55.00

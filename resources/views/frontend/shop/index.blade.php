@@ -3,11 +3,7 @@
 @section('content')
 
     <!-- Breadcrumb Section Begin -->
-<<<<<<< HEAD
-    <section class="breadcrumb-section set-bg" data-setbg="frontend/img/breadcrumb.jpg">
-=======
-    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('frontend/img/garis.png') }}">
->>>>>>> 3aa2111b1b7ce3de89aac7f6d97af4d25d43846d
+    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('frontend/img/product/bg.jpg') }}">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -80,7 +76,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                   <div class="filter__found">
-                    <h6><span>16</span> Products found</h6>
+                    <h6><span>15</span> Products found</h6>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-3">
@@ -93,14 +89,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="product__item">
-<<<<<<< HEAD
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-1.jpg">
-=======
-                  <div
-                    class="product__item__pic set-bg"
-                    data-setbg="img/product/paku y.jpg"
-                  >
->>>>>>> 3aa2111b1b7ce3de89aac7f6d97af4d25d43846d
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/pakuy.jpg') }}">
                     <ul class="product__item__pic__hover">
                       <li>
                         <a href="#"><i class="fa fa-heart"></i></a>
@@ -115,13 +104,14 @@
                   </div>
                   <div class="product__item__text">
                     <h6><a href="#">Paku</a></h6>
-                    <h5>Rp 30.00</h5>
+                    <h5>Rp 15.000/Kg</h5>
                   </div>
                 </div>
               </div>
+              <!-- Add more product items here -->
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-2.jpg">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/baut.jpg') }}">
                     <ul class="product__item__pic__hover">
                       <li>
                         <a href="#"><i class="fa fa-heart"></i></a>
@@ -132,14 +122,15 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Baut</a></h6>
-                    <h5>Rp 50.000</h5>
+                    <h6><a href="#">Mur Baut</a></h6>
+                    <h5>Rp 500/Pcs</h5>
                   </div>
                 </div>
               </div>
+              <!-- Add more product items here -->
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-3.jpg">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/paralo.jpg') }}">
                     <ul class="product__item__pic__hover">
                       <li>
                         <a href="#"><i class="fa fa-heart"></i></a>
@@ -150,68 +141,14 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Bata</a></h6>
-                    <h5>Rp 70.00</h5>
+                    <h6><a href="#">Paralon</a></h6>
+                    <h5>Rp 35.000/Pcs</h5>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-4.jpg">
-                    <ul class="product__item__pic__hover">
-                      <li>
-                        <a href="#"><i class="fa fa-heart"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product__item__text">
-                    <h6><a href="#">Batako</a></h6>
-                    <h5>Rp 90.00</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-5.jpg">
-                    <ul class="product__item__pic__hover">
-                      <li>
-                        <a href="#"><i class="fa fa-heart"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product__item__text">
-                    <h6><a href="#">Pilok</a></h6>
-                    <h5>Rp 70.000</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-6.jpg">
-                    <ul class="product__item__pic__hover">
-                      <li>
-                        <a href="#"><i class="fa fa-heart"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product__item__text">
-                    <h6><a href="#">Cat</a></h6>
-                    <h5> Rp 30.000</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-7.jpg">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/kayu.jpg') }}">
                     <ul class="product__item__pic__hover">
                       <li>
                         <a href="#"><i class="fa fa-heart"></i></a>
@@ -223,13 +160,13 @@
                   </div>
                   <div class="product__item__text">
                     <h6><a href="#">Kayu</a></h6>
-                    <h5>Rp 40.00</h5>
+                    <h5>Rp 20.000/Pcs</h5>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-8.jpg">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/gembok.jpeg') }}">
                     <ul class="product__item__pic__hover">
                       <li>
                         <a href="#"><i class="fa fa-heart"></i></a>
@@ -240,50 +177,14 @@
                     </ul>
                   </div>
                   <div class="product__item__text">
-                    <h6><a href="#">Betton</a></h6>
-                    <h5>Rp 300.000</h5>
+                    <h6><a href="#">Gembok</a></h6>
+                    <h5>Rp 20.000/Pcs</h5>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-9.jpg">
-                    <ul class="product__item__pic__hover">
-                      <li>
-                        <a href="#"><i class="fa fa-heart"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product__item__text">
-                    <h6><a href="#">Kerikil</a></h6>
-                    <h5>Rp 700.000</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-10.jpg">
-                    <ul class="product__item__pic__hover">
-                      <li>
-                        <a href="#"><i class="fa fa-heart"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product__item__text">
-                    <h6><a href="#">Baja</a></h6>
-                    <h5>Rp 900.000</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-11.jpg">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/keram.jpeg') }}">
                     <ul class="product__item__pic__hover">
                       <li>
                         <a href="#"><i class="fa fa-heart"></i></a>
@@ -295,13 +196,49 @@
                   </div>
                   <div class="product__item__text">
                     <h6><a href="#">Keramik</a></h6>
-                    <h5>Rp 50.000</h5>
+                    <h5>Rp 50.000/Pcs</h5>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="product__item">
-                  <div class="product__item__pic set-bg" data-setbg="frontend/img/product/product-12.jpg">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/catt.jpg') }}">
+                    <ul class="product__item__pic__hover">
+                      <li>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product__item__text">
+                    <h6><a href="#">Cat Tembok</a></h6>
+                    <h5>Rp 30.000/Kg</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/semen.jpg') }}">
+                    <ul class="product__item__pic__hover">
+                      <li>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product__item__text">
+                    <h6><a href="#">Semen</a></h6>
+                    <h5>Rp 50.000/Pcs</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/kaca.jpg') }}">
                     <ul class="product__item__pic__hover">
                       <li>
                         <a href="#"><i class="fa fa-heart"></i></a>
@@ -313,10 +250,120 @@
                   </div>
                   <div class="product__item__text">
                     <h6><a href="#">Kaca</a></h6>
-                    <h5>Rp 400.000</h5>
+                    <h5>Rp 25.000/Pcs</h5>
                   </div>
                 </div>
               </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/kompo.jpeg') }}">
+                    <ul class="product__item__pic__hover">
+                      <li>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product__item__text">
+                    <h6><a href="#">Komposit</a></h6>
+                    <h5>Rp 200.000/Pcs</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/logam.jpeg') }}">
+                    <ul class="product__item__pic__hover">
+                      <li>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product__item__text">
+                    <h6><a href="#">Logam</a></h6>
+                    <h5>Rp 900.000/Pcs</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/polim.jpeg') }}">
+                    <ul class="product__item__pic__hover">
+                      <li>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product__item__text">
+                    <h6><a href="#">Polimer</a></h6>
+                    <h5>Rp 6.000/Pcs</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/alam.jpeg') }}">
+                    <ul class="product__item__pic__hover">
+                      <li>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product__item__text">
+                    <h6><a href="#">Batu Alam</a></h6>
+                    <h5>Rp 125.000</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/baja.jpeg') }}">
+                    <ul class="product__item__pic__hover">
+                      <li>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product__item__text">
+                    <h6><a href="#">Baja</a></h6>
+                    <h5>Rp 90.000/Meter</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="{{ asset('frontend/img/product/genten.jpg') }}">
+                    <ul class="product__item__pic__hover">
+                      <li>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product__item__text">
+                    <h6><a href="#">Genting</a></h6>
+                    <h5>Rp 2.500/Pcs</h5>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Continue adding product items until you have 16 -->
             </div>
           </div>
         </div>

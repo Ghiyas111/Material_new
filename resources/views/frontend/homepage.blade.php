@@ -51,8 +51,8 @@
           </div>
       </section>
       <!-- Categories Section End -->
-
-      <!-- Featured Section Begin -->
+<!--
+      <!-- Featured Section Begin 
       <section class="featured spad">
           <div class="container">
               <div class="row">
@@ -258,9 +258,9 @@
               </div>
           </div>
       </section>
-      <!-- Featured Section End -->
-
-
+      <!-- Featured Section End 
+-->
+<br><br><br>
     <!-- Banner Begin -->
     <div class="banner">
       <div class="container">

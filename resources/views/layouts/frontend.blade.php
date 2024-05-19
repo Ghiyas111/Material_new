@@ -35,7 +35,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
       <div class="humberger__menu__logo">
-        <a  href="#"><img style="margin-left: 150px;"="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
+        <a  href="#"><img style="margin-left: 200px;"="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
       </div>
       <div class="humberger__menu__cart">
         <ul>
@@ -52,7 +52,7 @@
           @guest
             <div class="header__top__right__language">
               <div class="header__top__right__auth">
-                <a href="{{ route('login') }}"><i class="fa fa-user"></i> Login</a>
+              <a href="{{ route('login') }}"><i class="fa fa-user"></i>Login</a>
               </div>
             </div>
             <div class="header__top__right__auth" style="margin-left: 20px">
@@ -82,7 +82,8 @@
           <li class="active"><a href="/">Home</a></li>
           <li><a href="{{ route('shop.index') }}">Shop</a></li>
           <li>
-            <a href="#">Categories</a>
+          <a href="{{ route('categories.index') }}">Categories</a>
+
             <ul class="header__menu__dropdown">
               @foreach($menu_categories as $menu_category)
                 <li><a href="{{ route('shop.index', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
@@ -118,7 +119,7 @@
               <div class="header__top__left">
                 <ul>
                   <li><i class="fa fa-envelope"></i> Material@gmail.com</li>
-                  <li>Free Shipping for all Order of $99</li>
+                  
                 </ul>
               </div>
             </div>
@@ -168,25 +169,26 @@
               <a href="/"><img src="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <nav class="header__menu">
               <ul>
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="{{ route('shop.index') }}">Shop</a></li>
                 <li>
-                  <a href="#">Categories</a>
+                  <a href="{{'categories'}}">Categories</a>
                   <ul class="header__menu__dropdown">
                     @foreach($menu_categories as $menu_category)
-                      <li><a href="{{ route('shop.index', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
+                      <li><a href="{{ route('layouts.categories', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
                     @endforeach
                   </ul>
                 </li>
                 <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
+                <li><a href="{{ route('about-us') }}">About Us</a></li>
 
               </ul>
             </nav>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-2">
             <div class="header__cart">
               <ul>
                 <li>
@@ -226,7 +228,7 @@
                   <i class="fa fa-phone"></i>
                 </div>
                 <div class="hero__search__phone__text">
-                  <h5>+65 11.188.888</h5>
+                  <h5>+62 82240549998</h5>
                   <span>support 24/7 time</span>
                 </div>
               </div>
@@ -307,7 +309,7 @@
                   </script>
                   All rights reserved | This template is made with
                   <i class="fa fa-heart" aria-hidden="true"></i> by
-                  <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                  <a href="https://colorlib.com" target="_blank">Material</a>
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
               </div>

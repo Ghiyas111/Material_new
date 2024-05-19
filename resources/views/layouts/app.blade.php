@@ -1,8 +1,5 @@
 @extends('layouts.app')
 
-@section('content')
-    @include('frontend.layouts.contact')
-@endsection
 
 
 <!doctype html>
@@ -26,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- apaa -->
     <a href="{{ route('layouts.contact') }}">Contact Us</a>
+    
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
