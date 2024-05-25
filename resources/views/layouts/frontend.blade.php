@@ -91,7 +91,7 @@
             </ul>
           </li>
           <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
-
+          
         </ul>
       </nav>
       <div id="mobile-menu-wrap"></div>

@@ -453,7 +453,7 @@ ol {
 }
 
 .header__menu ul li .header__menu__dropdown li:hover > a {
-  color: #7fad39;
+  color: #f44336;
 }
 
 .header__menu ul li .header__menu__dropdown li a {
@@ -474,7 +474,7 @@ ol {
 }
 
 .header__menu ul li:hover > a {
-  color: #7fad39;
+  color: #f44336;
 }
 
 .header__menu ul li:last-child {
@@ -591,7 +591,7 @@ ol {
 }
 
 .hero__categories__all {
-  background: #7fad39;
+  background: #f44336;
   position: relative;
   padding: 10px 25px 10px 40px;
   cursor: pointer;
@@ -844,7 +844,7 @@ ol {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background: #7fad39;
+  background: #f44336;
   content: '';
   opacity: 0;
 }
@@ -892,8 +892,8 @@ ol {
 }
 
 .featured__item__pic__hover li:hover a {
-  background: #7fad39;
-  border-color: #7fad39;
+  background: #f44336;
+  border-color: #f44336;
 }
 
 .featured__item__pic__hover li:hover a i {
