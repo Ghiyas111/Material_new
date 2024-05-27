@@ -57,6 +57,7 @@ Route::get('products', [\App\Http\Controllers\HomeController::class, 'getProduct
 Route::get('product-detail/{product:slug}', [\App\Http\Controllers\ProductController::class, 'getProductDetail']);
 Route::post('carts', [\App\Http\Controllers\CartController::class, 'store']);
 Route::get('carts', [\App\Http\Controllers\CartController::class, 'showCart']);
+Route::resource('/cart', \App\Http\Controllers\CartController::class);
 // ongkir
 Route::get('api/provinces', [\App\Http\Controllers\OngkirController::class, 'getProvinces']);
 Route::get('api/cities', [\App\Http\Controllers\OngkirController::class, 'cities']);
@@ -81,6 +82,7 @@ Route::group(['middleware' => 'auth'], function() {
         Route::resource('categories', \App\Http\Controllers\Admin\CategoryController::class);
         Route::post('categories/images', [\App\Http\Controllers\Admin\CategoryController::class,'storeImage'])->name('categories.storeImage');
 
+        
     
         // tags
         Route::resource('tags', \App\Http\Controllers\Admin\TagController::class);
@@ -102,3 +104,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware('auth')->name('dashboard');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
