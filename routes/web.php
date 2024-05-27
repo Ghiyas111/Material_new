@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Authh\LoginController;
-
+use App\Http\Controllers\Auth\Login1Controller;
+use App\Http\Controllers\Auth\Register1Controller;
 // routes/web.php
 use App\Http\Controllers\AboutUsController;
 // categories
@@ -27,6 +28,28 @@ Route::get('/categories', function () {
 Route::get('/about-us', function () {
     return view('about');
 })->name('about-us');
+
+Route::get('/login1', [Login1Controller::class, 'showLoginForm'])->name('login1.form');
+Route::post('/login1', [Login1Controller::class, 'login'])->name('login1');
+
+Route::post('/logout', [Login1Controller::class, 'logout'])->name('logout');
+
+Route::get('/register1', [Register1Controller::class, 'showRegistrationForm'])->name('register1.form');
+Route::post('/register1', [Register1Controller::class, 'register'])->name('register1');
+
+/*BARUUUU NIII
+// routes/web.php
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/frontend', 'FrontendController@index')->name('frontend.index'); // Contoh route untuk halaman frontend.blade.php
+
+// Tambahkan route untuk proses login dan register
+Route::post('/login', 'AuthController@login')->name('login1');
+Route::get('/register', 'AuthController@showRegisterForm')->name('register1.form'); // Jika Anda memiliki metode untuk menampilkan form register
+*/
 
 /*
 |--------------------------------------------------------------------------

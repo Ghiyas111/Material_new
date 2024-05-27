@@ -49,48 +49,42 @@
         <div class="header__cart__price">item: <span>${{ $cartTotal }}</span></div>
       </div>
       <div class="humberger__menu__widget">
-          @guest
-            <div class="header__top__right__language">
-              <div class="header__top__right__auth">
-              <a href="{{ route('login') }}"><i class="fa fa-user"></i>Login</a>
-              </div>
-            </div>
-            <div class="header__top__right__auth" style="margin-left: 20px">
-              <a href="{{ route('register') }}"><i class="fa fa-user"></i> Register</a>
-            </div>
-          @else 
-          <div class="header__top__right__language">
+    @guest
+        <div class="header__top__right__language">
             <div class="header__top__right__auth">
-              <a href=""><i class="fa fa-user"></i> {{ auth()->user()->username }}</a>
+                <a href="{{ route('login1.form') }}">
+                    <i class="fa fa-user"></i> Login
+                </a>
             </div>
-            <span class="arrow_carrot-down"></span>
-            <ul>
-              <li><a href="#">Profile</a></li>
-            </ul>
-          </div>
-          <div class="header__top__right__auth" style="margin-left: 20px">
-            <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fa fa-user"></i> Logout</a>
-            <form action="{{ route('logout') }}" id="logout-form" method="post">
-              @csrf 
-
+        </div>
+        <div class="header__top__right__auth" style="margin-left: 20px;">
+            <a href="{{ route('register1.form') }}">
+                <i class="fa fa-user"></i> Register
+            </a>
+        </div>
+    @else
+        <div class="header__top__right__auth">
+            <a href="{{ route('logout') }}"
+               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <i class="fa fa-user"></i> Logout
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
             </form>
-          </div>
-          @endguest
-      </div>
+        </div>
+    @endguest
+</div>
+         
+        
+      
       <nav class="humberger__menu__nav mobile-menu">
         <ul>
           <li class="active"><a href="/">Home</a></li>
           <li><a href="{{ route('shop.index') }}">Shop</a></li>
           <li>
-<<<<<<< HEAD
-           
-          <a href="{{ route('categories.index') }}">Categories</a>
-          
-=======
             <!--
           <a href="{{ route('categories.index') }}">Categories</a>
             -->
->>>>>>> e15668174b9ba2719f6976ac748256e4f11da3eb
             <ul class="header__menu__dropdown">
               @foreach($menu_categories as $menu_category)
                 <li><a href="{{ route('shop.index', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
