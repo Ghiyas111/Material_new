@@ -134,16 +134,17 @@
         .social-icons a:hover {
             color: #000000;
         }
-        #map {
-            height: 700px; /* Tinggi peta */
-            width: 50%;   /* Lebar peta */
+        #map{
+           
+            height: 70px; /* Tinggi peta */
+            width: 11px;   /* Lebar peta */
             margin-top: 20px;
         }
     </style>
     <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<div>
   <div class="humberger__menu__overlay"></div>
   <div class="humberger__menu__wrapper">
     <div class="humberger__menu__logo">
@@ -361,10 +362,17 @@
             <span style="margin-left:33px;"><b>Follow Us</b></span>
         </div>
     </div>
-    <div  style="margin-left: 117px; " class="social-icons">
+      <div  style="margin-left: 117px; " class="social-icons">
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
         </div>
+        <p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.10702233417!2d108.32681071397325!3d-7.3232860456813595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5eba1b06f52f%3A0xaf882382d9de1508!2sPublic%20Vocational%20High%20School%201of%20Ciamis!5e0!3m2!1sen!2sid!4v1716839810869!5m2!1sen!2sid" 
+      width=55% 
+      height="755px">
+    
+    </iframe>
+  </p>
+  
 <br><br>
  <!-- Footer Section Begin -->
  <footer class="footer spad">

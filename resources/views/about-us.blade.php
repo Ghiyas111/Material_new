@@ -269,8 +269,12 @@
         <a style="margin-left: 50px;" href="#contact">About Us</a>
     </div>
     <br><br><br><br>
-<p style="margin-left: 50px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquam sequi enim, <br> fugiat dolorum beatae eligendi optio animi harum, similique nam facere libero, ut fuga <br> labore? Voluptatem dolor numquam at.
-Lorem ipsum dolor sit amet consectetur, adipisi <br> cing elit. Quasi asperiores nihil rem nemo delectus alias vitae voluptatibus fuga quibusd <br> am excepturi voluptatum, facere voluptatem vel ea. Temporibus beatae necessitatibus sit provident.</p>
+<p style="margin-left: 50px;" >Hai gais, 
+<br>Page ini sedang Di Urus Oleh Niell! 
+<br> Ditunggu Ya About Pagenya
+Sedang mencari ide ini mau diisi gimana mmm 
+<br> udah segitu aja progressnya masih 30% untuk page ini
+<br> tolong jangan diganti2 page nya </p>
 
 <br><br><br>
 
