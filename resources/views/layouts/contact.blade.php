@@ -20,13 +20,83 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/slicknav.min.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}" type="text/css" />
     <style>
+
+.humberger__menu__contact {
+    padding: 10px 0 13px;
+  }
+  .humberger__menu__contact ul li {
+    font-size: 14px;
+    color: #1c1c1c;
+    position: relative;
+    line-height: 30px;
+    list-style: none;
+  }
+  .humberger__menu__contact ul li i {
+    color: #252525;
+    margin-right: 5px;
+  }
+  .humberger__menu__cart ul {
+    display: inline-block;
+    margin-right: 25px;
+  }
+  .humberger__menu__cart ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .humberger__menu__cart ul li:last-child {
+    margin-right: 0;
+  }
+  .humberger__menu__cart ul li a {
+    position: relative;
+  }
+  .humberger__menu__cart ul li a i {
+    font-size: 18px;
+    color: #1c1c1c;
+  }
+       .humberger__menu__wrapper .slicknav_nav .slicknav_row,
+       .humberger__menu__wrapper .slicknav_nav a {
+        padding: 8px 0;
+        }
+        .humberger__menu__overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    z-index: 98;
+    visibility: hidden;
+    -webkit-transition: all, 0.6s;
+    -moz-transition: all, 0.6s;
+    -ms-transition: all, 0.6s;
+    -o-transition: all, 0.6s;
+    transition: all, 0.6s;
+  }
+  .humberger__menu__overlay.active {
+    visibility: visible;
+  }
+  .header__top {
+    display: none;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__cart {
+    text-align: center;
+    padding: 10px 0 24px;
+  }
+  .over_hid {
+    overflow: hidden;
+  }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
           
         }
         .navbar {
-            background-color: #007BFF; /* Warna biru */
+            background-color: #e65c19; /* Warna biru */
             overflow: hidden;
             padding: 14px 20px;
         }
@@ -57,12 +127,12 @@
         }
         .social-icons a {
             text-decoration: none;
-            color: #007BFF;
+            color: #000000;
             margin-right: 10px;
             font-size: 24px;
         }
         .social-icons a:hover {
-            color: #0056b3;
+            color: #000000;
         }
         #map {
             height: 700px; /* Tinggi peta */
@@ -74,6 +144,196 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <div class="humberger__menu__overlay"></div>
+  <div class="humberger__menu__wrapper">
+    <div class="humberger__menu__logo">
+      <a  href="#"><img style="margin-left: 200px;"="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
+    </div>
+    <div class="humberger__menu__cart">
+      <ul>
+        <li>
+          <a href="#"><i class="fa fa-heart"></i> <span>1</span></a>
+        </li>
+    </div>
+    <div class="humberger__menu__widget">
+        @guest
+          <div class="header__top__right__language">
+            <div class="header__top__right__auth">
+            <a href="{{ route('login') }}"><i class="fa fa-user"></i>Login</a>
+            </div>
+          </div>
+          <div class="header__top__right__auth" style="margin-left: 20px">
+            <a href="{{ route('register') }}"><i class="fa fa-user"></i> Register</a>
+          </div>
+        @else 
+        <div class="header__top__right__language">
+          <div class="header__top__right__auth">
+            <a href=""><i class="fa fa-user"></i> {{ auth()->user()->username }}</a>
+          </div>
+          <span class="arrow_carrot-down"></span>
+          <ul>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="header__top__right__auth" style="margin-left: 20px">
+          <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fa fa-user"></i> Logout</a>
+          <form action="{{ route('logout') }}" id="logout-form" method="post">
+            @csrf 
+
+          </form>
+        </div>
+        @endguest
+    </div>
+    <nav class="humberger__menu__nav mobile-menu">
+      <ul>
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="{{ route('shop.index') }}">Shop</a></li>
+        <li>
+        <a href="{{ route('categories.index') }}">Categories</a>
+
+          <ul class="header__menu__dropdown">
+            @foreach($menu_categories as $menu_category)
+              <li><a href="{{ route('shop.index', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
+            @endforeach
+          </ul>
+        </li>
+        <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
+        
+      </ul>
+    </nav>
+<div id="mobile-menu-wrap"></div>
+    <div class="header__top__right__social">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    </div>
+    <div class="humberger__menu__contact">
+      <ul>
+        <li><i class="fa fa-envelope"></i> Material@gmail.com</li>
+        <li>Free Shipping for all Order of $99</li>
+      </ul>
+    </div>
+  </div>
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="header__top__left">
+            <ul>
+              <li><i class="fa fa-envelope"></i> Material@gmail.com</li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            @guest
+              <div class="header__top__right">
+                <div
+                  class="header__top__right__language header__top__right__auth"
+                >
+                  <a class="d-inline" href="{{ route('login') }}"
+                    ><i class="fa fa-user"></i> Login</a
+                  >
+                </div>
+                <div class="header__top__right__auth">
+                  <a href="{{ route('register') }}"><i class="fa fa-user"></i> Register</a>
+                </div>
+            </div>
+            @else 
+            <div class="header__top__right">
+            <div
+              class="header__top__right__language header__top__right__auth"
+            >
+              <a class="d-inline" href="#"
+                ><i class="fa fa-user"></i> {{ auth()->user()->username }}</a
+              >
+              <span class="arrow_carrot-down"></span>
+              <ul>
+                <li><a href="#">Profile</a></li>
+              </ul>
+            </div>
+            <div class="header__top__right__auth">
+              <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit()"><i class="fa fa-user"></i> Logout</a>
+              <form action="{{ route('logout') }}" id="logout-form" method="post">
+                @csrf                   
+              </form>
+            </div>
+          </div>
+            @endguest
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="header__logo">
+          <a href="/"><img src="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <nav class="header__menu">
+          <ul>
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="{{ route('shop.index') }}">Shop</a></li>
+            <li>
+              <a href="{{'categories'}}">Categories</a>
+              <ul class="header__menu__dropdown">
+                @foreach($menu_categories as $menu_category)
+                  <li><a href="{{ route('layouts.categories', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
+                @endforeach
+              </ul>
+            </li>
+            <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
+            <li><a href="{{ route('about-us') }}">About Us</a></li>
+
+          </ul>
+        </nav>
+      </div>
+      <div class="col-lg-2">
+        <div class="header__cart">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-heart"></i> <span>1</span></a>
+            </li>
+        </div>
+      </div>
+    </div>
+    <div class="humberger__open">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</header>
+<!-- Header Section End -->
+
+<!-- Hero Section Begin -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="hero__search">
+          <div class="hero__search__form">
+            <form action="#">
+              <input type="text" placeholder="What do yo u need?" />
+              <button type="submit" class="site-btn">SEARCH</button>
+            </form>
+          </div>
+          <div class="hero__search__phone">
+            <div class="hero__search__phone__icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="hero__search__phone__text">
+              <h5>+62 82240549998</h5>
+              <span>support 24/7 time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <div  class="navbar">
         <a style="margin-left: 50px;" href="#contact">Kontak Kami</a>
     </div>

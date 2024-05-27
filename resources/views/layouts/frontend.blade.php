@@ -82,9 +82,15 @@
           <li class="active"><a href="/">Home</a></li>
           <li><a href="{{ route('shop.index') }}">Shop</a></li>
           <li>
+<<<<<<< HEAD
            
           <a href="{{ route('categories.index') }}">Categories</a>
           
+=======
+            <!--
+          <a href="{{ route('categories.index') }}">Categories</a>
+            -->
+>>>>>>> e15668174b9ba2719f6976ac748256e4f11da3eb
             <ul class="header__menu__dropdown">
               @foreach($menu_categories as $menu_category)
                 <li><a href="{{ route('shop.index', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
@@ -92,7 +98,7 @@
             </ul>
           </li>
           <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
-
+          
         </ul>
       </nav>
       <div id="mobile-menu-wrap"></div>
