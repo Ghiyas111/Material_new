@@ -82,8 +82,9 @@
           <li class="active"><a href="/">Home</a></li>
           <li><a href="{{ route('shop.index') }}">Shop</a></li>
           <li>
+            <!--
           <a href="{{ route('categories.index') }}">Categories</a>
-
+            -->
             <ul class="header__menu__dropdown">
               @foreach($menu_categories as $menu_category)
                 <li><a href="{{ route('shop.index', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
