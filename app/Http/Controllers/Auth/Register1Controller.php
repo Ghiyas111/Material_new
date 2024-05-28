@@ -22,7 +22,7 @@ class Register1Controller extends Controller
             'password' => 'required|string|min:8|confirmed',
         ]);
 
-        User1::create([
+        users1::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
