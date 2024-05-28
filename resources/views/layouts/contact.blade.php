@@ -20,79 +20,8 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/slicknav.min.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}" type="text/css" />
     <style>
-
-.humberger__menu__contact {
-    padding: 10px 0 13px;
-  }
-  .humberger__menu__contact ul li {
-    font-size: 14px;
-    color: #1c1c1c;
-    position: relative;
-    line-height: 30px;
-    list-style: none;
-  }
-  .humberger__menu__contact ul li i {
-    color: #252525;
-    margin-right: 5px;
-  }
-  .humberger__menu__cart ul {
-    display: inline-block;
-    margin-right: 25px;
-  }
-  .humberger__menu__cart ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 15px;
-  }
-  .humberger__menu__cart ul li:last-child {
-    margin-right: 0;
-  }
-  .humberger__menu__cart ul li a {
-    position: relative;
-  }
-  .humberger__menu__cart ul li a i {
-    font-size: 18px;
-    color: #1c1c1c;
-  }
-       .humberger__menu__wrapper .slicknav_nav .slicknav_row,
-       .humberger__menu__wrapper .slicknav_nav a {
-        padding: 8px 0;
-        }
-        .humberger__menu__overlay {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    content: '';
-    z-index: 98;
-    visibility: hidden;
-    -webkit-transition: all, 0.6s;
-    -moz-transition: all, 0.6s;
-    -ms-transition: all, 0.6s;
-    -o-transition: all, 0.6s;
-    transition: all, 0.6s;
-  }
-  .humberger__menu__overlay.active {
-    visibility: visible;
-  }
-  .header__top {
-    display: none;
-  }
-  .header__menu {
-    display: none;
-  }
-  .header__cart {
-    text-align: center;
-    padding: 10px 0 24px;
-  }
-  .over_hid {
-    overflow: hidden;
-  }
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+                                    
           
         }
         .navbar {
@@ -139,6 +68,7 @@
             height: 70px; /* Tinggi peta */
             width: 11px;   /* Lebar peta */
             margin-top: 20px;
+            margin-left: 70px;
         }
     </style>
     <!-- Link to Font Awesome for icons -->
@@ -366,14 +296,14 @@
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
         </div>
-        <p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.10702233417!2d108.32681071397325!3d-7.3232860456813595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5eba1b06f52f%3A0xaf882382d9de1508!2sPublic%20Vocational%20High%20School%201of%20Ciamis!5e0!3m2!1sen!2sid!4v1716839810869!5m2!1sen!2sid" 
-      width=55% 
-      height="755px">
+        <p style="margin-left: 570px; margin-top: -370px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.10702233417!2d108.32681071397325!3d-7.3232860456813595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5eba1b06f52f%3A0xaf882382d9de1508!2sPublic%20Vocational%20High%20School%201of%20Ciamis!5e0!3m2!1sen!2sid!4v1716839810869!5m2!1sen!2sid" 
+      width=80% 
+      height="500px">
     
     </iframe>
   </p>
   
-<br><br>
+<br><br><br><br><br>
  <!-- Footer Section Begin -->
  <footer class="footer spad">
       <div class="container">
