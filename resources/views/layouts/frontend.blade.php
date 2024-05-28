@@ -23,6 +23,46 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('frontend/css/slicknav.min.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}" type="text/css" />
+  <style>
+           /* Styling for transparent dropdown */
+        .custom-dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .custom-dropdown .dropdown-menu {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            background-color: transparent; /* Transparent background */
+            color: #000; /* Text color black */
+            border: none; /* No border */
+            border-radius: 0; /* No border radius */
+            box-shadow: none; /* No box shadow */
+        }
+
+        .custom-dropdown .dropdown-item {
+            color: #000; /* Text color black */
+        }
+
+        .custom-dropdown .dropdown-item:hover,
+        .custom-dropdown .dropdown-item:focus {
+            background-color: white; /* Hover color light gray */
+        }
+
+        /* Hide dropdown arrow */
+        .custom-dropdown::after {
+            display: none;
+        }
+        .category {
+            background-color: white; /* Warna background putih */
+            padding: 5px 10px; /* Atur padding agar teks tidak terlalu dekat dengan tepi */
+            border-radius: 5px; /* Tambahkan border-radius agar sudut terlihat melengkung */
+            display: inline-block; /* Atur elemen menjadi inline block agar background hanya menutupi teks */
+        }
+  </style>
   </head>
 
   <body>
@@ -82,9 +122,16 @@
           <li class="active"><a href="/">Home</a></li>
           <li><a href="{{ route('shop.index') }}">Shop</a></li>
           <li>
-            <!--
+            
           <a href="{{ route('categories.index') }}">Categories</a>
-            -->
+
+          <div class="container">
+        <h2>Kategori</h2>
+        <!-- Contoh penggunaan warna background putih pada teks kategori -->
+        <div class="category">Kategori 1</div>
+        <div class="category">Kategori 2</div>
+        <div class="category">Kategori 3</div>
+    </div>
             <ul class="header__menu__dropdown">
               @foreach($menu_categories as $menu_category)
                 <li><a href="{{ route('shop.index', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
@@ -176,14 +223,27 @@
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="{{ route('shop.index') }}">Shop</a></li>
                 <li>
-                  
-                  <a href="{{'categories'}}">Categories</a>
+                  <!--
+                  <a href="{{'categories'}}">Categoriesssss</a>
                   <ul class="header__menu__dropdown">
                     @foreach($menu_categories as $menu_category)
                       <li><a href="{{ route('layouts.categories', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
                     @endforeach
                   </ul>
                 </li>
+      -->
+      <div class="container mt-5">
+        <div class="dropdown custom-dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Checkout</a>
+                <a class="dropdown-item" href="#">Blog</a>
+                <a class="dropdown-item" href="#">Cart</a>
+            </div>
+        </div>
+    </div>
                 <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
                 <li><a href="{{ route('about-us') }}">About Us</a></li>
 
@@ -333,5 +393,9 @@
     <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('frontend/js/main.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
   </body>
 </html>

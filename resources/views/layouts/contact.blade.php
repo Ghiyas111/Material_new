@@ -362,16 +362,16 @@
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
         </div>
-        <p style="margin-left: 570px; margin-top: -370px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.10702233417!2d108.32681071397325!3d-7.3232860456813595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5eba1b06f52f%3A0xaf882382d9de1508!2sPublic%20Vocational%20High%20School%201of%20Ciamis!5e0!3m2!1sen!2sid!4v1716839810869!5m2!1sen!2sid" 
+        <p style="margin-left: 570px; margin-top: -390px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.10702233417!2d108.32681071397325!3d-7.3232860456813595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5eba1b06f52f%3A0xaf882382d9de1508!2sPublic%20Vocational%20High%20School%201of%20Ciamis!5e0!3m2!1sen!2sid!4v1716839810869!5m2!1sen!2sid" 
       width=80% 
       height="500px">
     
     </iframe>
   </p>
-<<<<<<< HEAD
+
   
-<br><br><br><br><br>
-=======
+<br>
+
   <div class="container leave-message">
         <h2>Leave Message</h2>
         <form action="#">
@@ -392,8 +392,8 @@
         </form>
     </div>
 
-<br><br>
->>>>>>> 7f97a2ab8dace7a5656333caaad7bf159e0fd4ec
+
+
  <!-- Footer Section Begin -->
  <footer class="footer spad">
       <div class="container">
