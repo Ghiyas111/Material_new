@@ -130,12 +130,12 @@
                     <div
                       class="header__top__right__language header__top__right__auth"
                     >
-                      <a class="d-inline" href="{{ route('login') }}"
+                      <a class="d-inline" href="{{ route('login1.form') }}"
                         ><i class="fa fa-user"></i> Login</a
                       >
                     </div>
                     <div class="header__top__right__auth">
-                      <a href="{{ route('register') }}"><i class="fa fa-user"></i> Register</a>
+                      <a href="{{ route('register1.form') }}"><i class="fa fa-user"></i> Register</a>
                     </div>
                 </div>
                 @else 

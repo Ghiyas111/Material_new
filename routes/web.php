@@ -50,6 +50,8 @@ Route::get('/frontend', 'FrontendController@index')->name('frontend.index'); // 
 Route::post('/login', 'AuthController@login')->name('login1');
 Route::get('/register', 'AuthController@showRegisterForm')->name('register1.form'); // Jika Anda memiliki metode untuk menampilkan form register
 */
+Route::get('/login1', [Login1Controller::class, 'showLoginForm'])->name('login1.form');
+Route::get('/register1', [Register1Controller::class, 'showRegistrationForm'])->name('register1.form');
 
 /*
 |--------------------------------------------------------------------------
@@ -81,6 +83,7 @@ Route::get('product-detail/{product:slug}', [\App\Http\Controllers\ProductContro
 Route::post('carts', [\App\Http\Controllers\CartController::class, 'store']);
 Route::get('carts', [\App\Http\Controllers\CartController::class, 'showCart']);
 Route::resource('/cart', \App\Http\Controllers\CartController::class);
+
 // ongkir
 Route::get('api/provinces', [\App\Http\Controllers\OngkirController::class, 'getProvinces']);
 Route::get('api/cities', [\App\Http\Controllers\OngkirController::class, 'cities']);

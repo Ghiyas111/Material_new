@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap"
       rel="stylesheet"
     />
-
+    
     <!-- Css Styles -->
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('frontend/css/font-awesome.min.css') }}" type="text/css" />
@@ -139,6 +139,72 @@
             height: 70px; /* Tinggi peta */
             width: 11px;   /* Lebar peta */
             margin-top: 20px;
+        }
+        .leave-message {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .leave-message h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .leave-message form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .leave-message .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .leave-message .form-row div {
+            flex: 1;
+            margin: 5px;
+        }
+
+        .leave-message .form-row div.full-width {
+            flex: 100%;
+        }
+
+        .leave-message input[type="text"],
+        .leave-message textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .leave-message textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .leave-message .text-center {
+            text-align: center;
+        }
+
+        .leave-message .site-btn {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .leave-message .site-btn:hover {
+            background-color: #2980b9;
         }
     </style>
     <!-- Link to Font Awesome for icons -->
@@ -372,7 +438,26 @@
     
     </iframe>
   </p>
-  
+  <div class="container leave-message">
+        <h2>Leave Message</h2>
+        <form action="#">
+            <div class="form-row">
+                <div>
+                    <input type="text" placeholder="Your name" required>
+                </div>
+                <div>
+                    <input type="text" placeholder="Your Email" required>
+                </div>
+                <div class="full-width">
+                    <textarea placeholder="Your message" required></textarea>
+                </div>
+                <div class="text-center full-width">
+                    <button type="submit" class="site-btn">SEND MESSAGE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
 <br><br>
  <!-- Footer Section Begin -->
  <footer class="footer spad">
