@@ -233,7 +233,7 @@
                 </li>
       --><li><a style="margin-left: -50px;" href="{{ route('layouts.contact') }}">Contact Us</a></li>
       
-      
+                <li><a href="{{ route('about-us') }}">Categories</a></li>
                 <li><a href="{{ route('about-us') }}">About Us</a></li>
 
               </ul>

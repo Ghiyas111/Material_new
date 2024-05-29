@@ -53,17 +53,7 @@ Route::get('/register', 'AuthController@showRegisterForm')->name('register1.form
 Route::get('/login1', [Login1Controller::class, 'showLoginForm'])->name('login1.form');
 Route::get('/register1', [Register1Controller::class, 'showRegistrationForm'])->name('register1.form');
 
-Route::get('/blog', function () {
-    return view('blog');
-})->name('blog');
 
-Route::get('/checkout', function () {
-    return view('checkout');
-})->name('checkout');
-
-Route::get('/cart', function () {
-    return view('cart');
-})->name('cart');
 
 /*
 |--------------------------------------------------------------------------
