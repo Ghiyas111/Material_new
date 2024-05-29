@@ -233,7 +233,15 @@
                 </li>
       --><li><a style="margin-left: -50px;" href="{{ route('layouts.contact') }}">Contact Us</a></li>
       
-                <li><a href="{{ route('about-us') }}">Categories</a></li>
+                <li class="dropdown">
+    <a href="{{ route('about-us') }}" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Checkout</a></li>
+    </ul>
+</li>
+
                 <li><a href="{{ route('about-us') }}">About Us</a></li>
 
               </ul>
