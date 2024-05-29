@@ -231,20 +231,9 @@
                     @endforeach
                   </ul>
                 </li>
-      -->
-      <div class="container mt-5">
-        <div class="dropdown custom-dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categories
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Checkout</a>
-                <a class="dropdown-item" href="#">Blog</a>
-                <a class="dropdown-item" href="#">Cart</a>
-            </div>
-        </div>
-    </div>
-                <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
+      --><li><a style="margin-left: -50px;" href="{{ route('layouts.contact') }}">Contact Us</a></li>
+      
+      
                 <li><a href="{{ route('about-us') }}">About Us</a></li>
 
               </ul>
