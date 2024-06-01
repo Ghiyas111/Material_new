@@ -4,8 +4,6 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use App\Models\User1;
 
 class Login1Controller extends Controller
 {
@@ -16,21 +14,24 @@ class Login1Controller extends Controller
 
     public function login(Request $request)
     {
-        $credentials = $request->only('email', 'password');
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|string|min:8',
+        ]);
 
-        if (Auth::attempt($credentials)) {
-            return redirect()->intended('dashboard');
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            return redirect()->intended('home'); // Redirect to intended page
         }
 
-        return redirect()->back()->withErrors(['email' => 'These credentials do not match our records.']);
+        return back()->withErrors([
+            'email' => 'Email yang anda pake tidak Valid',
+        ]);
     }
 
     public function logout(Request $request)
     {
         Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
         return redirect('/login1');
     }
-    
 }
+
