@@ -23,6 +23,9 @@ Route::get('/categories', function () {
     return view('categories', compact('categories'));
 })->name('categories.index');
 
+Route::get('/cart', 'CartController@index')->name('cart.index');
+Route::get('/blog', 'BlogController@index')->name('blog.index');
+Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
 // routes/web.php
 
 Route::get('/about-us', function () {
