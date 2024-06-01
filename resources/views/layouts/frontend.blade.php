@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}" type="text/css" />
@@ -123,7 +124,7 @@
           <li><a href="{{ route('shop.index') }}">Shop</a></li>
           <li>
             
-          <a href="{{ route('categories.index') }}">Categories</a>
+          <a href="{{ route('categories.index') }}">Categoriesss</a>
 
           <div class="container">
         <h2>Kategori</h2>
@@ -233,16 +234,8 @@
                 </li>
       --><li><a style="margin-left: -50px;" href="{{ route('layouts.contact') }}">Contact Us</a></li>
       
-                <li class="dropdown">
-    <a href="{{ route('about-us') }}" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
-    <ul class="dropdown-menu">
-        <li><a href="#">Cart</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Checkout</a></li>
-    </ul>
-</li>
-
-                <li><a href="{{ route('about-us') }}">About Us</a></li>
+      
+                <li ><a href="{{ route('about-us') }}">About Us</a></li>
 
               </ul>
             </nav>
