@@ -279,14 +279,14 @@
             <li class="active"><a href="/">Home</a></li>
             <li><a href="{{ route('shop.index') }}">Shop</a></li>
             <li>
-              <a href="{{'categories'}}">Categories</a>
+             
               <ul class="header__menu__dropdown">
                 @foreach($menu_categories as $menu_category)
                   <li><a href="{{ route('layouts.categories', $menu_category->slug) }}">{{ $menu_category->name }}</a></li>
                 @endforeach
               </ul>
             </li>
-            <li><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
+            <li style="margin-left: -47px;" ><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
             <li><a href="{{ route('about-us') }}">About Us</a></li>
 
           </ul>

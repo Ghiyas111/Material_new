@@ -15,14 +15,14 @@
     />
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="frontend/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="frontend/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="frontendcss/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="frontend/css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="frontend/css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="frontend/css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="frontend/css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="frontend/css/style.css" type="text/css" />
   </head>
 
   <body>
