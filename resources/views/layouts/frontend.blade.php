@@ -237,7 +237,7 @@
       
                 <li ><a href="{{ route('about-us') }}">About Us</a></li>
 
-                <li ><a href="{{ route('about-us') }}">Categories</a></li>
+                <li ><a href="#">Categories</a></li>
 
                 
 
