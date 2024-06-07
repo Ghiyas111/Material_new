@@ -74,7 +74,7 @@
     <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<>
   <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
       <div class="humberger__menu__logo">
@@ -276,6 +276,10 @@
 Sedang mencari ide ini mau diisi gimana mmm 
 <br> udah segitu aja progressnya masih 30% untuk page ini
 <br> tolong jangan diganti2 page nya </p>
+<img src="{{ asset('frontend/img/AboutUs/Kontribusi.png') }}" alt="" /></a> 
+<img src="{{ asset('frontend/img/AboutUs/Kontribusi2.png') }}" alt="" /></a>
+<br> Jadi Si Nepal itu pake akun si Giyas Cee's
+
 
 <br><br><br>
 
