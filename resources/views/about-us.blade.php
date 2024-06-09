@@ -70,11 +70,51 @@
             width: 50%;   /* Lebar peta */
             margin-top: 20px;
         }
+          /* Style the dropdown button */
+          .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color:  transparent; /* Warna tombol menjadi putih */
+            color: black;
+            padding: 16px 24px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+       
     </style>
     <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<>
+
   <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
       <div class="humberger__menu__logo">
@@ -220,7 +260,13 @@
               </li>
               <li style="margin-left: -47px;" ><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
               <li><a href="{{ route('about-us') }}">About Us</a></li>
-
+              <li><div class="dropdown">
+  <button style="margin-left: -3  0px;" class="dropbtn">Categories</button>
+  <div class="dropdown-content">
+    <a href="#">Blog</a>
+    <a href="#">Checkout</a>
+  </div>
+</div></li>
             </ul>
           </nav>
         </div>
