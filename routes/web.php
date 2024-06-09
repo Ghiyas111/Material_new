@@ -5,6 +5,8 @@ use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Authh\LoginController;
 use App\Http\Controllers\Auth\Login1Controller;
 use App\Http\Controllers\Auth\Register1Controller;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\BlogController;    
 // routes/web.php
 use App\Http\Controllers\AboutUsController;
 // categories
@@ -75,6 +77,7 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/about-us', [AboutUsController::class, 'index'])->name('about-us');
 Route::get('/contact', [ContactController::class, 'index'])->name('layouts.contact');
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
+
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
 Route::get('/shop', [\App\Http\Controllers\ShopController::class, 'index'])->name('shop.index');

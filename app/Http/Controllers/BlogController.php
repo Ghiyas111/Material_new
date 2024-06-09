@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class BlogController extends Controller
 {
@@ -11,3 +12,7 @@ class BlogController extends Controller
         return view('blog.index');
     }
 }
+
+
+
+
