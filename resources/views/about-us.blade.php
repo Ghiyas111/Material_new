@@ -260,13 +260,8 @@
               </li>
               <li style="margin-left: -47px;" ><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
               <li><a href="{{ route('about-us') }}">About Us</a></li>
-              <li><div class="dropdown">
-  <button style="margin-left: -3  0px;" class="dropbtn">Categories</button>
-  <div class="dropdown-content">
-    <a href="#">Blog</a>
-    <a href="#">Checkout</a>
-  </div>
-</div></li>
+              <li ><a href="{{ route('categories.index') }}">Checkout</a>
+              </li>
             </ul>
           </nav>
         </div>

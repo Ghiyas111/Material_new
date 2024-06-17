@@ -273,17 +273,13 @@
                   </ul>
                 </li>
       --><li><a style="margin-left: -50px;" href="{{ route('layouts.contact') }}">Contact Us</a></li>
-      
+     
       
                 <li ><a href="{{ route('about-us') }}">About Us</a></li>
+                <li ><a href="{{ route('categories.index') }}">Checkout</a></li>
 
-                <li><div class="dropdown">
-  <button style="margin-left: -30px;" class="dropbtn">Categories</button>
-  <div class="dropdown-content">
-    <a href="#">Blog</a>
-    <a href="#">Checkout</a>
-  </div>
-</div></li>
+                
+</li>
 
                 
 

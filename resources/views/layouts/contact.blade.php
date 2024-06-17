@@ -226,7 +226,7 @@
         <li class="active"><a href="/">Home</a></li>
         <li><a href="{{ route('shop.index') }}">Shop</a></li>
         <li>
-        <a href="{{ route('categories.index') }}">Categoriesss</a>
+        <a href="{{ route('categories.index') }}">Categor</a>
 
           <ul class="header__menu__dropdown">
             @foreach($menu_categories as $menu_category)
@@ -330,13 +330,9 @@
             </li>
             <li style="margin-left: -47px;" ><a href="{{ route('layouts.contact') }}">Contact Us</a></li>
             <li><a href="{{ route('about-us') }}">About Us</a></li>
-            <li><div class="dropdown">
-  <button style="margin-left: -30px;" class="dropbtn">Categories</button>
-  <div class="dropdown-content">
-    <a href="#">Blog</a>
-    <a href="#">Checkout</a>
-  </div>
-</div></li>
+            
+            <li ><a href="{{ route('categories.index') }}">Checkout</a></li>
+</li>
 
           </ul>
         </nav>
