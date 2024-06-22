@@ -12,6 +12,7 @@ use App\Http\Controllers\AboutUsController;
 // categories
 use App\Http\Controllers\CategoryController;
 // routes/web.php
+use App\Http\Controllers\Cart2Controller;
 
 Route::get('/categories', function () {
     // Data untuk contoh, bisa digantikan dengan data dari database
@@ -41,7 +42,7 @@ Route::post('/logout', [Login1Controller::class, 'logout'])->name('logout');
 
 Route::get('/register1', [Register1Controller::class, 'showRegistrationForm'])->name('register1.form');
 Route::post('/register1', [Register1Controller::class, 'register'])->name('register1');
-
+Route::get('/cart2', [Cart2Controller::class, 'index'])->name('cart2.index');
 /*BARUUUU NIII
 // routes/web.php
 
