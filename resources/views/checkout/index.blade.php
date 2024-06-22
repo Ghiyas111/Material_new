@@ -23,6 +23,25 @@
     <link rel="stylesheet" href="frontend/css/owl.carousel.min.css" type="text/css" />
     <link rel="stylesheet" href="frontend/css/slicknav.min.css" type="text/css" />
     <link rel="stylesheet" href="frontend/css/style.css" type="text/css" />
+    <style>
+        .navbar {
+            background-color: #e65c19; /* Warna biru */
+            overflow: hidden;
+            padding: 14px 20px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+    </style>
   </head>
 
   <body>
@@ -234,6 +253,7 @@
       </div>
     </section>
     <!-- Hero Section End -->
+    
 
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
@@ -252,7 +272,9 @@
       </div>
     </section>
     <!-- Breadcrumb Section End -->
-
+    <div  class="navbar">
+        <a style="margin-left: 50px;" href="#contact">About Us</a>
+    </div>
     <!-- Checkout Section Begin -->
     <section class="checkout spad">
       <div class="container">
